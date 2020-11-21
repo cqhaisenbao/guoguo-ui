@@ -47,7 +47,7 @@
             Topnav
         },
         setup() {
-            const menuVisible = inject<Ref<boolean>>('xxx');
+            const menuVisible = inject<Ref<boolean>>('menuVisible');
             return {menuVisible};
         }
     };

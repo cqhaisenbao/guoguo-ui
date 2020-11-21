@@ -5,6 +5,7 @@
             <li>菜单1</li>
             <li>菜单2</li>
         </ul>
+        <span class="toggleAside"></span>
     </div>
 </template>
 
@@ -13,7 +14,7 @@
 
     export default {
         setup() {
-            const menuVisible = inject<Ref<boolean>>('xxx');
+            const menuVisible = inject<Ref<boolean>>('menuVisible');
             const toggleMenu = () => {
                 menuVisible.value = !menuVisible.value;
             };
