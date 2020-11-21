@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78fdbfdb-d12d-40e4-9efb-336a89d5df35" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Topnav.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605936286358</updated>
       <workItem from="1605936288350" duration="1638000" />
-      <workItem from="1605937949728" duration="4332000" />
+      <workItem from="1605937949728" duration="4573000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1605936764343</created>
@@ -78,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605948306565</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="封装并且使用Topnav组件">
+      <created>1605949240387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605949240387</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,17 +90,18 @@
     <MESSAGE value="初始化项目" />
     <MESSAGE value="初始化路由" />
     <MESSAGE value="引入全局样式，完成Home和Doc的样式部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入全局样式，完成Home和Doc的样式部分" />
+    <MESSAGE value="封装并且使用Topnav组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="封装并且使用Topnav组件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1397" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605946975260">
       <screen x="0" y="0" width="2065" height="831" />
     </state>
     <state x="1397" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2065.831@0.0.2065.831" timestamp="1605946975260" />
-    <state x="3192" y="0" key="CommitChangelistDialog2" timestamp="1605948305916">
+    <state x="3192" y="0" key="CommitChangelistDialog2" timestamp="1605949239789">
       <screen x="1920" y="0" width="2065" height="831" />
     </state>
-    <state x="3192" y="0" key="CommitChangelistDialog2/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605948305916" />
+    <state x="3192" y="0" key="CommitChangelistDialog2/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605949239789" />
     <state x="1272" y="0" key="CommitChangelistDialog2/0.0.2065.831@0.0.2065.831" timestamp="1605945940030" />
   </component>
 </project>
