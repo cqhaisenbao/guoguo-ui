@@ -1,26 +1,27 @@
 <template>
     <div>
-        <button class="guoguo-switch" @click="toggle" :class="{'guoguo-checked':checked}">
-            <span></span>
+        <button class="guoguo-switch" @click="toggle" :class="{'guoguo-checked':value}">
+            <span>1</span>
         </button>
+        {{value}}
     </div>
 </template>
 
 <script lang="ts">
+    import {ref} from 'vue';
 
     export default {
-        data(){
-            return{
-                checked:false
-            }
+        props: {
+            value: Boolean
         },
-        methods:{
-            toggle(){
-                this.checked = !this.checked;
-            }
+        setup(props, context) {
+            const toggle = () => {
+                context.emit('input', !props.value);
+            };
+            return {toggle};
         }
-    };
 
+    };
 
 </script>
 

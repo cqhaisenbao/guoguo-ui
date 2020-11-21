@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78fdbfdb-d12d-40e4-9efb-336a89d5df35" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/Switch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yuyou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yuyou.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SwitchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwitchDemo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Topnav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Switch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Switch.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +18,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1kaQaYTND8Rhn1kmlcxjVjGV5V3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,7 +51,8 @@
       <updated>1605936286358</updated>
       <workItem from="1605936288350" duration="1638000" />
       <workItem from="1605937949728" duration="8471000" />
-      <workItem from="1605954032540" duration="8387000" />
+      <workItem from="1605954032540" duration="10447000" />
+      <workItem from="1605965541537" duration="685000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1605936764343</created>
@@ -135,11 +131,43 @@
       <option name="project" value="LOCAL" />
       <updated>1605960226733</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="初步实现Switch">
+      <created>1605963375714</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605963375714</updated>
+    </task>
+    <task id="LOCAL-00013" summary="实现Switch的父子组件通信">
+      <created>1605965057987</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605965057987</updated>
+    </task>
+    <task id="LOCAL-00014" summary="实现Switch的父子组件通信">
+      <created>1605966113744</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605966113744</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
@@ -152,7 +180,9 @@
     <MESSAGE value="根据视口宽度判断是否出现侧边栏" />
     <MESSAGE value="路由切换后关闭侧边栏" />
     <MESSAGE value="基本完成官网框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="基本完成官网框架" />
+    <MESSAGE value="初步实现Switch" />
+    <MESSAGE value="实现Switch的父子组件通信" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现Switch的父子组件通信" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1397" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605946975260">
@@ -163,10 +193,10 @@
       <screen x="1920" y="0" width="2065" height="831" />
     </state>
     <state x="3171" y="77" key="#意向/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605951383541" />
-    <state x="3192" y="0" key="CommitChangelistDialog2" timestamp="1605960226223">
+    <state x="3192" y="0" key="CommitChangelistDialog2" timestamp="1605966113252">
       <screen x="1920" y="0" width="2065" height="831" />
     </state>
-    <state x="3192" y="0" key="CommitChangelistDialog2/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605960226223" />
+    <state x="3192" y="0" key="CommitChangelistDialog2/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605966113252" />
     <state x="1272" y="0" key="CommitChangelistDialog2/0.0.2065.831@0.0.2065.831" timestamp="1605945940030" />
     <state x="3236" y="131" width="668" height="574" key="find.popup" timestamp="1605962595869">
       <screen x="1920" y="0" width="2065" height="831" />
