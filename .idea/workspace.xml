@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78fdbfdb-d12d-40e4-9efb-336a89d5df35" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shims-vue.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/yuyou.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ts.external.directory.path" value="D:\新建文件夹\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yuyou\Desktop\guoguo-ui\src" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605936286358</updated>
       <workItem from="1605936288350" duration="1638000" />
-      <workItem from="1605937949728" duration="1013000" />
+      <workItem from="1605937949728" duration="3296000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1605936764343</created>
@@ -63,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605936764343</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始化路由">
+      <created>1605945940784</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605945940784</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,12 +84,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+    <MESSAGE value="初始化路由" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化路由" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1272" y="0" key="CommitChangelistDialog2" timestamp="1605945928463">
+    <state x="1397" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605946975260">
       <screen x="0" y="0" width="2065" height="831" />
     </state>
-    <state x="1272" y="0" key="CommitChangelistDialog2/0.0.2065.831@0.0.2065.831" timestamp="1605945928463" />
+    <state x="1397" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2065.831@0.0.2065.831" timestamp="1605946975260" />
+    <state x="1272" y="0" key="CommitChangelistDialog2" timestamp="1605945940030">
+      <screen x="0" y="0" width="2065" height="831" />
+    </state>
+    <state x="1272" y="0" key="CommitChangelistDialog2/0.0.2065.831@0.0.2065.831" timestamp="1605945940030" />
   </component>
 </project>
