@@ -1,6 +1,6 @@
 <template>
     <div class="topnav">
-       <div class="logo">LOGO</div>
+        <div @click="toggleMenu" class="logo">LOGO</div>
         <ul class="menu">
             <li>菜单1</li>
             <li>菜单2</li>
@@ -9,7 +9,17 @@
 </template>
 
 <script lang="ts">
+    import {inject, Ref} from 'vue';
 
+    export default {
+        setup() {
+            const menuVisible = inject<Ref<boolean>>('xxx');
+            const toggleMenu = () => {
+                menuVisible.value = !menuVisible.value;
+            };
+            return {toggleMenu};
+        }
+    };
 </script>
 
 <style lang="scss" scoped>
@@ -25,23 +35,28 @@
         z-index: 20;
         justify-content: center;
         align-items: center;
-        >.logo {
+
+        > .logo {
             max-width: 6em;
             margin-right: auto;
-            >svg {
+
+            > svg {
                 width: 32px;
                 height: 32px;
             }
         }
-        >.menu {
+
+        > .menu {
             display: flex;
             white-space: nowrap;
             flex-wrap: nowrap;
-            >li {
+
+            > li {
                 margin: 0 1em;
             }
         }
-        >.toggleAside {
+
+        > .toggleAside {
             width: 32px;
             height: 32px;
             position: absolute;
@@ -51,14 +66,15 @@
             display: none;
             background: fade-out(black, 0.9);
         }
+
         @media (max-width: 500px) {
-            >.menu {
+            > .menu {
                 display: none;
             }
-            >.logo {
+            > .logo {
                 margin: 0 auto;
             }
-            >.toggleAside {
+            > .toggleAside {
                 display: inline-block;
             }
         }
