@@ -1,7 +1,7 @@
 <template>
     <div>
         <button class="guoguo-switch" @click="toggle" :class="{'guoguo-checked':value}">
-            <span>1</span>
+            <span>123</span>
         </button>
         {{value}}
     </div>
