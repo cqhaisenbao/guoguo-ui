@@ -26,6 +26,7 @@
 <style lang="scss" scoped>
     $color: #007974;
     .topnav {
+        background: indianred;
         color: $color;
         display: flex;
         padding: 16px;

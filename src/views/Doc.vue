@@ -67,7 +67,8 @@
         > .content {
             flex-grow: 1;
             padding-top: 60px;
-            padding-left: 156px;
+            padding-left: 206px;
+            /*border: 10px solid red;*/
             @media (max-width: 500px) {
                 padding-left: 0;
             }
@@ -84,13 +85,13 @@
         > main {
             flex-grow: 1;
             padding: 16px;
-            background: white;
+            background: darkseagreen;
         }
     }
 
     aside {
         background: lightblue;
-        width: 150px;
+        width: 200px;
         position: fixed;
         top: 0;
         left: 0;
