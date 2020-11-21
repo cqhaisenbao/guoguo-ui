@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78fdbfdb-d12d-40e4-9efb-336a89d5df35" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/Switch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yuyou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yuyou.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SwitchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwitchDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Topnav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
       <updated>1605936286358</updated>
       <workItem from="1605936288350" duration="1638000" />
       <workItem from="1605937949728" duration="8471000" />
-      <workItem from="1605954032540" duration="5212000" />
+      <workItem from="1605954032540" duration="8387000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1605936764343</created>
@@ -123,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605959397817</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="基本完成官网框架">
+      <created>1605960226732</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605960226733</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,10 +163,14 @@
       <screen x="1920" y="0" width="2065" height="831" />
     </state>
     <state x="3171" y="77" key="#意向/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605951383541" />
-    <state x="3192" y="0" key="CommitChangelistDialog2" timestamp="1605959397232">
+    <state x="3192" y="0" key="CommitChangelistDialog2" timestamp="1605960226223">
       <screen x="1920" y="0" width="2065" height="831" />
     </state>
-    <state x="3192" y="0" key="CommitChangelistDialog2/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605959397232" />
+    <state x="3192" y="0" key="CommitChangelistDialog2/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605960226223" />
     <state x="1272" y="0" key="CommitChangelistDialog2/0.0.2065.831@0.0.2065.831" timestamp="1605945940030" />
+    <state x="3236" y="131" width="668" height="574" key="find.popup" timestamp="1605962595869">
+      <screen x="1920" y="0" width="2065" height="831" />
+    </state>
+    <state x="3236" y="131" width="668" height="574" key="find.popup/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605962595869" />
   </component>
 </project>

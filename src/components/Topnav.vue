@@ -16,7 +16,7 @@
         setup() {
             const menuVisible = inject<Ref<boolean>>('menuVisible');
             const toggleMenu = () => {
-                menuVisible.value = !menuVisible.value;
+                menuVisible.value = !menuVisible.checked;
             };
             return {toggleMenu};
         }
