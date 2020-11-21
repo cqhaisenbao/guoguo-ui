@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78fdbfdb-d12d-40e4-9efb-336a89d5df35" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/SwitchDemo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Topnav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
       <updated>1605936286358</updated>
       <workItem from="1605936288350" duration="1638000" />
       <workItem from="1605937949728" duration="8471000" />
-      <workItem from="1605954032540" duration="2383000" />
+      <workItem from="1605954032540" duration="3554000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1605936764343</created>
@@ -102,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605956987286</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="根据视口宽度判断是否出现侧边栏">
+      <created>1605957495314</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605957495314</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +126,8 @@
     <MESSAGE value="初始化Doc页面html和css" />
     <MESSAGE value="实现aside切换" />
     <MESSAGE value="添加toggleAside" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加toggleAside" />
+    <MESSAGE value="根据视口宽度判断是否出现侧边栏" />
+    <option name="LAST_COMMIT_MESSAGE" value="根据视口宽度判断是否出现侧边栏" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1397" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605946975260">
@@ -127,10 +138,10 @@
       <screen x="1920" y="0" width="2065" height="831" />
     </state>
     <state x="3171" y="77" key="#意向/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605951383541" />
-    <state x="3192" y="0" key="CommitChangelistDialog2" timestamp="1605956986758">
+    <state x="3192" y="0" key="CommitChangelistDialog2" timestamp="1605957494799">
       <screen x="1920" y="0" width="2065" height="831" />
     </state>
-    <state x="3192" y="0" key="CommitChangelistDialog2/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605956986758" />
+    <state x="3192" y="0" key="CommitChangelistDialog2/0.0.1549.831/1920.0.2065.831@1920.0.2065.831" timestamp="1605957494799" />
     <state x="1272" y="0" key="CommitChangelistDialog2/0.0.2065.831@0.0.2065.831" timestamp="1605945940030" />
   </component>
 </project>
