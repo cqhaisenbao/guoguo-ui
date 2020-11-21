@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="topnavAndBanner">
+            <Topnav/>
             <div class="banner">
                 <h1>轱辘UI</h1>
                 <h2>一个面向学习者的 UI 框架</h2>
@@ -39,10 +40,10 @@
 </template>
 
 <script lang="ts">
-    // import Topnav from "../components/Topnav.vue";
+    import Topnav from '../components/Topnav.vue'
     export default {
         components: {
-            // Topnav
+            Topnav
         },
     };
 </script>
