@@ -1,5 +1,6 @@
 <template>
     <button class="guoguo-button" :class="classes" :disabled="disabled">
+        <span class="guoguo-loadingIndicator" v-if="loading"></span>
         <slot/>
     </button>
 </template>
@@ -22,6 +23,10 @@
                 default: 'normal'
             },
             disabled: {
+                type: Boolean,
+                default: false
+            },
+            loading: {
                 type: Boolean,
                 default: false
             }
