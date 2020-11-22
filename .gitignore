@@ -1,4 +1,3 @@
-node_modules
-.DS_Store
-dist
-*.local
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/src/assets/
