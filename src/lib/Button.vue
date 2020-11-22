@@ -1,5 +1,5 @@
 <template>
-    <button class="guoguo-button" :class="classes">
+    <button class="guoguo-button" :class="classes" :disabled="disabled">
         <slot/>
     </button>
 </template>
@@ -16,14 +16,23 @@
             size: {
                 type: String,
                 default: 'normal'
+            },
+            level: {
+                type: String,
+                default: 'normal'
+            },
+            disabled: {
+                type: Boolean,
+                default: false
             }
         },
         setup(props) {
-            const {theme, size} = props;
+            const {theme, size, level} = props;
             const classes = computed(() => {
                 return {
                     [`guoguo-theme-${ theme }`]: theme,
-                    [`guoguo-size-${ size }`]: size
+                    [`guoguo-size-${ size }`]: size,
+                    [`guoguo-level-${ level }`]: level
                 };
             });
             return {classes};
