@@ -1,7 +1,7 @@
 <template>
     <div>
-        {{y}}
-        <Switch :value="y" @input="y=$event"/>
+        <!--Switch有个value是双向绑定的，也可以叫自动监听-->
+        <Switch v-model:value="bool"/>
     </div>
 </template>
 
@@ -12,8 +12,8 @@
     export default {
         components: {Switch},
         setup() {
-            const y = ref(true);
-            return {y};
+            const bool = ref(true);
+            return {bool};
         }
     };
 </script>

@@ -1,6 +1,10 @@
 <template>
     <div class="topnav">
-        <div  class="logo">LOGO</div>
+        <router-link to="/" class="logo">
+            <svg class="icon">
+                <use xlink:href="#icon-king"></use>
+            </svg>
+        </router-link>
         <ul class="menu">
             <li>菜单1</li>
             <li>菜单2</li>
@@ -27,7 +31,7 @@
     $color: #007974;
     .topnav {
         background: indianred;
-        color: $color;
+        color: white;
         display: flex;
         padding: 16px;
         position: fixed;

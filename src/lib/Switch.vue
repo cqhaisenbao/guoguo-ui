@@ -1,9 +1,8 @@
 <template>
     <div>
         <button class="guoguo-switch" @click="toggle" :class="{'guoguo-checked':value}">
-            <span>123</span>
+            <span></span>
         </button>
-        {{value}}
     </div>
 </template>
 
@@ -12,11 +11,11 @@
 
     export default {
         props: {
-            value: Boolean
+            value: Boolean,
         },
         setup(props, context) {
             const toggle = () => {
-                context.emit('input', !props.value);
+                context.emit('update:value', !props.value);
             };
             return {toggle};
         }
@@ -48,7 +47,7 @@
         }
 
         &.guoguo-checked {
-            background: #1890ff;
+            background: #4ecca3;
 
             > span {
                 left: calc(100% - #{$h2} - 2px);
