@@ -39,7 +39,7 @@
             const f2 = () => {};
             const showDialog = () => {
                 openDialog({
-                    title: '标题', content: '内容',
+                    title: '标题', content: '内容', closeOnclickOverlay: false,
                     ok() {
                         console.log('ok');
                     },
