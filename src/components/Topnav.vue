@@ -1,15 +1,17 @@
 <template>
-    <div class="topnav">
-        <router-link to="/" class="logo">
-            <svg class="icon">
-                <use xlink:href="#icon-king"></use>
-            </svg>
-        </router-link>
-        <ul class="menu">
-            <li>菜单1</li>
-            <li>菜单2</li>
-        </ul>
-        <span class="toggleAside" @click="toggleMenu"></span>
+    <div class="home">
+        <div class="topnav">
+            <router-link to="/" class="logo">
+                <svg class="icon">
+                    <use xlink:href="#icon-logo1"></use>
+                </svg>
+            </router-link>
+            <ul class="menu">
+                <li>菜单1</li>
+                <li>菜单2</li>
+            </ul>
+            <span class="toggleAside" @click="toggleMenu"></span>
+        </div>
     </div>
 </template>
 
@@ -29,11 +31,14 @@
 
 <style lang="scss" scoped>
     $color: #007974;
+    .home .topnav{
+        background: 0 0;
+    }
     .topnav {
-        background: indianred;
-        color: white;
+        background: white;
+        color: #1d2c40;
         display: flex;
-        padding: 16px;
+        padding: 10px 50px;
         position: fixed;
         top: 0;
         left: 0;
@@ -41,14 +46,15 @@
         z-index: 20;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 0 1px rgba(0, 0, 0, .25);
 
         > .logo {
             max-width: 6em;
             margin-right: auto;
 
             > svg {
-                width: 32px;
-                height: 32px;
+                width: 40px;
+                height: 40px;
             }
         }
 

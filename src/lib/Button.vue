@@ -1,6 +1,6 @@
 <template>
     <button class="guoguo-button" :class="classes" :disabled="disabled">
-        <span class="guoguo-loadingIndicator" v-if="loading"></span>
+        <span v-if="loading" class="guoguo-loadingIndicator" ></span>
         <slot/>
     </button>
 </template>

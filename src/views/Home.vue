@@ -3,7 +3,7 @@
         <div class="topnavAndBanner">
             <Topnav/>
             <div class="banner">
-                <h1>轱辘UI</h1>
+                <h1>绿洲UI</h1>
                 <h2>一个面向学习者的 UI 框架</h2>
                 <p class="actions">
                     <a href="https://github.com">GitHub</a>
@@ -40,7 +40,8 @@
 </template>
 
 <script lang="ts">
-    import Topnav from '../components/Topnav.vue'
+    import Topnav from '../components/Topnav.vue';
+
     export default {
         components: {
             Topnav
@@ -51,67 +52,74 @@
 <style lang="scss" scoped>
     $green: #02bcb0;
     $border-radius: 4px;
-    $color: #007974;
+    $color: white;
     .topnavAndBanner {
-        background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+        background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
         clip-path: ellipse(80% 60% at 50% 40%);
     }
+
     .features {
         margin: 64px auto;
         padding: 0 16px;
         @media (min-width: 800px) {
             width: 800px;
-            >ul {
-                >li {
+            > ul {
+                > li {
                     width: 50%;
                 }
             }
         }
         @media (min-width: 1200px) {
             width: 1200px;
-            >ul {
-                >li {
+            > ul {
+                > li {
                     width: 33.3333%;
                 }
             }
         }
-        >ul {
+
+        > ul {
             display: flex;
             flex-wrap: wrap;
-            >li {
+
+            > li {
                 margin: 16px 0;
                 display: grid;
                 justify-content: start;
                 align-content: space-between;
-                grid-template-areas:
-                        "icon title"
-                        "icon text";
+                grid-template-areas: "icon title" "icon text";
                 grid-template-columns: 80px auto;
                 grid-template-rows: 1fr auto;
-                >svg {
+
+                > svg {
                     grid-area: icon;
                     width: 64px;
                     height: 64px;
                 }
-                >h3 {
+
+                > h3 {
                     grid-area: title;
                     font-size: 28px;
                 }
-                >p {
+
+                > p {
                     grid-area: text
                 }
             }
         }
     }
+
     .banner {
         color: $color;
-        padding: 100px 0;
+        padding: 140px 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        >.actions {
+
+        > .actions {
             padding: 8px 0;
+
             a {
                 margin: 0 8px;
                 background: $green;
@@ -119,6 +127,7 @@
                 display: inline-block;
                 padding: 8px 24px;
                 border-radius: $border-radius;
+
                 &:hover {
                     text-decoration: none;
                 }
