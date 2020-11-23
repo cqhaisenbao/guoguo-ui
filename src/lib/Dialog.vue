@@ -3,11 +3,11 @@
         <div class="guoguo-dialog-overlay" @click="closeOnclickOverlay"></div>
         <div class="guoguo-dialog-wrapper">
             <div class="guoguo-dialog">
-                <header>标题
+                <header>
+                    <slot name="title"/>
                     <span @click="close" class="guoguo-dialog-close"></span></header>
                 <main>
-                    <p>第一行字</p>
-                    <p>第二行字</p>
+                    <slot name="content"/>
                 </main>
                 <footer>
                     <Button level="main" @click="ok">OK</Button>
@@ -57,7 +57,7 @@
             };
             const cancel = () => {
                 context.emit('cancel');
-                close()
+                close();
             };
             return {close, closeOnclickOverlay, ok, cancel};
         }
