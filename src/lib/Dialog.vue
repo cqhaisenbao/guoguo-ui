@@ -1,20 +1,22 @@
 <template>
     <template v-if="visible">
-        <div class="guoguo-dialog-overlay" @click="closeOnclickOverlay"></div>
-        <div class="guoguo-dialog-wrapper">
-            <div class="guoguo-dialog">
-                <header>
-                    <slot name="title"/>
-                    <span @click="close" class="guoguo-dialog-close"></span></header>
-                <main>
-                    <slot name="content"/>
-                </main>
-                <footer>
-                    <Button level="main" @click="ok">OK</Button>
-                    <Button @click="cancel">Cancel</Button>
-                </footer>
+        <Teleport to="body">
+            <div class="guoguo-dialog-overlay" @click="closeOnclickOverlay"></div>
+            <div class="guoguo-dialog-wrapper">
+                <div class="guoguo-dialog">
+                    <header>
+                        <slot name="title"/>
+                        <span @click="close" class="guoguo-dialog-close"></span></header>
+                    <main>
+                        <slot name="content"/>
+                    </main>
+                    <footer>
+                        <Button level="main" @click="ok">OK</Button>
+                        <Button @click="cancel">Cancel</Button>
+                    </footer>
+                </div>
             </div>
-        </div>
+        </Teleport>
     </template>
 </template>
 
