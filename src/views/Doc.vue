@@ -85,7 +85,7 @@
         > main {
             flex-grow: 1;
             padding: 16px;
-            background: darkseagreen;
+            background: white;
         }
     }
 
@@ -113,6 +113,7 @@
                 }
 
                 .router-link-active {
+                    border-right: 5px solid #4ecca3;
                     background: white;
                 }
             }

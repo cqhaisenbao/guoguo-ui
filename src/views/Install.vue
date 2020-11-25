@@ -1,11 +1,20 @@
 <template>
-    <div>install</div>
+    <article class="markdown-body" v-html="md">
+    </article>
 </template>
 
-<script lang="ts">
-  export default {}
+<script>
+    import md from '../markdown/install.md';
+    export default {
+        data() {
+            return {md}
+        }
+    }
 </script>
 
 <style lang="scss" scoped>
-
+    .markdown-body pre{
+        background: #333333;
+        color: #ffffff;
+    }
 </style>
