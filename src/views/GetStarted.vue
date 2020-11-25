@@ -14,7 +14,8 @@
 </script>
 
 <style lang="scss" scoped>
-    .markdown-body pre {
+    //样式穿透
+    .markdown-body ::v-deep(pre) {
         background: #333333;
         color: #ffffff;
     }
