@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="guoguo-switch" @click="toggle" :class="{'guoguo-checked':value}">
+        <button class="guoguo-switch" @click="toggle" :class="{'guoguo-checked':value}" :disabled="disabled">
             <span></span>
         </button>
     </div>
@@ -10,7 +10,13 @@
 
     export default {
         props: {
-            value: Boolean,
+            value: {
+                type: Boolean
+            },
+            disabled: {
+                type: Boolean,
+                default: false
+            }
         },
         setup(props, context) {
             const toggle = () => {

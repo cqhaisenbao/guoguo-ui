@@ -73,8 +73,7 @@
             margin-left: 8px;
         }
 
-        &:hover,
-        &:focus {
+        &:hover{
             color: $blue;
             border-color: $blue;
         }

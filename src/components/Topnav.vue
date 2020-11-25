@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <div class="topnav">
+        <div class="topnav" id="top-nav">
             <router-link to="/" class="logo">
                 <svg class="icon">
                     <use xlink:href="#icon-easy"></use>
@@ -46,7 +46,7 @@
         background: white;
         color: #1d2c40;
         display: flex;
-        padding: 10px 50px;
+        padding: 8px 50px;
         position: fixed;
         top: 0;
         left: 0;

@@ -1,5 +1,5 @@
 <template>
-    <div class="layout">
+    <div class="doc-layout">
         <Topnav toggleMenuButtonVisible class="nav"/>
         <div class="content">
             <aside v-if="menuVisible">
@@ -54,21 +54,25 @@
 </script>
 
 <style lang="scss" scoped>
-    $aside-index: 10;
-    .layout {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
+    $aside-index: 0;
 
+    .doc-layout ::v-deep(.topnav) {
+        box-shadow: 0 2px 8px #f0f1f2;
+
+    }
+
+    .doc-layout {
         > .nav {
-            flex-shrink: 0;
+            height: 60px;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            background: #ffffff;
         }
 
         > .content {
-            flex-grow: 1;
             padding-top: 60px;
-            padding-left: 206px;
-            /*border: 10px solid red;*/
+            padding-left: 250px;
             @media (max-width: 500px) {
                 padding-left: 0;
             }
@@ -79,7 +83,7 @@
         display: flex;
 
         > aside {
-            flex-shrink: 0;
+            width: 260px;
         }
 
         > main {
@@ -90,14 +94,16 @@
     }
 
     aside {
-        background: lightblue;
-        width: 200px;
+        width: 260px;
         position: fixed;
-        top: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        top: 60px;
         left: 0;
-        height: 100%;
-        z-index: $aside-index;
-        padding: 70px 0 16px;
+        bottom: 0;
+        border-right: 1px solid #e8e8e8;
+        z-index: 10;
+        background: #fff;
 
         > h2 {
             margin-bottom: 4px;
