@@ -3,7 +3,7 @@
         <div class="topnavAndBanner">
             <Topnav/>
             <div class="banner">
-                <h1>绿洲UI</h1>
+                <h1>YI UI</h1>
                 <h2>一个面向学习者的 UI 框架</h2>
                 <p class="actions">
                     <a href="https://github.com">GitHub</a>

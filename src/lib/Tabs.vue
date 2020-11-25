@@ -4,7 +4,8 @@
             <div class="guoguo-tabs-nav-item" v-for="(t,index) in titles"
                  :ref="el => { if (t===selected) selectedItem = el }"
                  @click="select(t)" :class="{selected: t=== selected}"
-                 :key="index">{{t}}</div>
+                 :key="index">{{t}}
+            </div>
             <div class="guoguo-tabs-nav-indicator" ref="indicator"></div>
         </div>
         <div class="guoguo-tabs-content">
@@ -15,7 +16,7 @@
 
 <script lang="ts">
     import Tab from './Tab.vue';
-    import {ref, computed, onMounted, watchEffect} from 'vue';
+    import {ref, computed, onMounted, onUpdated} from 'vue';
 
     export default {
         props: {
@@ -28,16 +29,16 @@
             const indicator = ref<HTMLDivElement>(null);
             const container = ref<HTMLDivElement>(null);
 
-            onMounted(() => {
-                watchEffect(() => {
-                    const {width} = selectedItem.value.getBoundingClientRect();
-                    indicator.value.style.width = width + 'px';
-                    const {left: left1} = container.value.getBoundingClientRect();
-                    const {left: left2} = selectedItem.value.getBoundingClientRect();
-                    const left = left2 - left1;
-                    indicator.value.style.left = left + 'px';
-                });
-            });
+            const x = () => {
+                const {width} = selectedItem.value.getBoundingClientRect();
+                indicator.value.style.width = width + 'px';
+                const {left: left1} = container.value.getBoundingClientRect();
+                const {left: left2} = selectedItem.value.getBoundingClientRect();
+                const left = left2 - left1;
+                indicator.value.style.left = left + 'px';
+            };
+            onMounted(x);
+            onUpdated(x);
             //拿到当前组件作用域内子组件
             const defaults = context.slots.default();
             defaults.forEach((tag) => {
