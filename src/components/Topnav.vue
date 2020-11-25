@@ -7,8 +7,8 @@
                 </svg>
             </router-link>
             <ul class="menu">
-                <router-link to="/doc">文档</router-link>
-                <li>菜单2</li>
+                <router-link to="/doc/intro">文档</router-link>
+                <li>github</li>
             </ul>
             <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
                 <use xlink:href="#icon-menu"></use>
@@ -72,7 +72,7 @@
             flex-wrap: nowrap;
 
             > li {
-                margin: 0 1em;
+                margin: 0 2em;
             }
         }
 

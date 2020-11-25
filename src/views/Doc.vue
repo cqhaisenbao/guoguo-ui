@@ -72,7 +72,7 @@
 
         > .content {
             padding-top: 60px;
-            padding-left: 250px;
+            padding-left: 260px;
             @media (max-width: 500px) {
                 padding-left: 0;
             }
@@ -107,6 +107,7 @@
 
         > h2 {
             margin-bottom: 4px;
+
             padding: 0 16px;
         }
 
@@ -114,13 +115,14 @@
             > li {
                 > a {
                     display: block;
-                    padding: 4px 16px;
+                    padding: 6px 16px;
                     text-decoration: none;
                 }
 
                 .router-link-active {
-                    border-right: 5px solid #4ecca3;
-                    background: white;
+                    border-right: 5px solid #0d7377;
+                    background: #323232;
+                    color: white;
                 }
             }
         }
