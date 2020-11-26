@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <div class="topnav" id="top-nav">
+        <div class="topnav">
             <router-link to="/" class="logo">
                 <svg class="icon">
                     <use xlink:href="#icon-easy"></use>
@@ -39,9 +39,10 @@
 
 <style lang="scss" scoped>
     $color: #007974;
-    .home .topnav{
+    .home .topnav {
         background: 0 0;
     }
+
     .topnav {
         background: white;
         color: #1d2c40;
