@@ -107,7 +107,7 @@
 
         > h2 {
             margin-bottom: 4px;
-
+            margin-top: 3px;
             padding: 0 16px;
         }
 
@@ -120,9 +120,10 @@
                 }
 
                 .router-link-active {
-                    border-right: 5px solid #0d7377;
+                    border-left: 4px solid #0d7377;
                     background: #323232;
                     color: white;
+                    font-weight: 500;
                 }
             }
         }
