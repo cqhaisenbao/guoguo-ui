@@ -15,6 +15,7 @@
     </Dialog>
     <h1>示例2</h1>
     <Button @click="showDialog">show</Button>
+    <hr>
 </template>
 
 <script lang="ts">
@@ -48,7 +49,7 @@
                     }
                 });
             };
-            return {x, toggle, f1, f2, showDialog};
+            return {x, toggle, f1, f2, showDialog, Button};
         }
     };
 </script>
