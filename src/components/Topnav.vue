@@ -21,10 +21,10 @@
     import {inject, Ref} from 'vue';
 
     export default {
-        props: {
-            toggleMenuButtonVisible: {
-                type: Boolean,
-                default: false
+        props:{
+            toggleMenuButtonVisible:{
+                type:Boolean,
+                default:false
             }
         },
         setup() {
