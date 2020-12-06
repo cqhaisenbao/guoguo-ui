@@ -1,5 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './lib/guoguo.scss';
-import './index.scss';
+import './assets/style/index.scss';
 import {createApp} from 'vue';
 import App from './App.vue';
 import {router} from './router';

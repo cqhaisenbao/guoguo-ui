@@ -3,7 +3,7 @@
         <Topnav :toggleMenuButtonVisible="true" class="nav"/>
         <div class="content">
             <aside v-if="menuVisible">
-                <h2>文档</h2>
+                <h3>文档</h3>
                 <ol>
                     <li>
                         <router-link to="/doc/intro">介绍</router-link>
@@ -15,7 +15,7 @@
                         <router-link to="/doc/get-started">开始使用</router-link>
                     </li>
                 </ol>
-                <h2>组件列表</h2>
+                <h3>组件列表</h3>
                 <ol>
                     <li>
                         <router-link to="/doc/switch">Switch 组件</router-link>
@@ -28,6 +28,9 @@
                     </li>
                     <li>
                         <router-link to="/doc/tabs">Tabs 组件</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/doc/loader">Loader 组件</router-link>
                     </li>
                 </ol>
             </aside>
@@ -105,7 +108,7 @@
         z-index: 10;
         background: #fff;
 
-        > h2 {
+        > h3 {
             margin-bottom: 4px;
             margin-top: 3px;
             padding: 0 16px;
