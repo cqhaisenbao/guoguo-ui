@@ -4,7 +4,7 @@
 
 <template>
     <Button @click="openLoader">打开加载提示</Button>
-    <Loader v-if="isLoading" text="拼命加载中" background="rgba(0,0,0, 0.8)"></Loader>
+    <Loader v-if="isLoading" background="rgba(0,0,0, 0.8)"></Loader>
 </template>
 
 <script lang="ts">
@@ -18,7 +18,7 @@ export default {
         const isLoading = ref(false);
         const openLoader = () => {
             isLoading.value = true;
-            setTimeout(() => isLoading.value = false, 2000);
+            setTimeout(() => isLoading.value = false, 3000);
         };
         return {isLoading, openLoader};
     }

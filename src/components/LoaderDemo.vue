@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Loader 组件示例 </h1>
-        <p class="description">用于页面和区块的加载中状态。当页面局部处于等待异步数据或正在渲染过程时，合适的加载动效会有效缓解用户的焦虑。本示例通过setTimeout实现加载完成效果。</p>
+        <p class="description">用于页面和异步请求的加载中状态，本示例通过setTimeout实现异步请求完成效果。</p>
         <Demo :component="Loader1Demo"/>
     </div>
 </template>
