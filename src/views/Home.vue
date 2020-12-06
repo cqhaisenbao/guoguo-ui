@@ -43,19 +43,25 @@
 import Topnav from '../components/Topnav.vue';
 
 export default {
-    components: {
-        Topnav
-    },
+    components: {Topnav},
 };
 </script>
 
 <style lang="scss" scoped>
-$green: #02bcb0;
+$green: #fff;
 $border-radius: 4px;
-$color: white;
+$color: #000000de;
 .topnavAndBanner {
-    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    background-image: linear-gradient(270deg, #8146b4, #6990f6);
     clip-path: ellipse(80% 60% at 50% 40%);
+}
+
+.topnavAndBanner ::v-deep(.menu) {
+    color: white;
+
+    a:hover {
+        color: white;
+    }
 }
 
 .features {
@@ -110,7 +116,7 @@ $color: white;
 }
 
 .banner {
-    color: $color;
+    color: white;
     padding: 140px 0;
     display: flex;
     justify-content: center;
@@ -121,9 +127,9 @@ $color: white;
         padding: 8px 0;
 
         a {
-            margin: 0 8px;
+            margin: 12px 8px;
             background: $green;
-            color: white;
+            color: $color;
             display: inline-block;
             padding: 8px 24px;
             border-radius: $border-radius;

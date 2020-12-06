@@ -45,7 +45,7 @@
 
     .topnav {
         background: white;
-        color: #1d2c40;
+        //color: #fff;
         display: flex;
         padding: 8px 50px;
         position: fixed;
@@ -71,6 +71,7 @@
             display: flex;
             white-space: nowrap;
             flex-wrap: nowrap;
+            //color: white;
 
             > li {
                 margin: 0 2em;
