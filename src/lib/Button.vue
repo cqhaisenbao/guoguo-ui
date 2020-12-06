@@ -51,7 +51,7 @@
     $color: #333;
     $blue: #40a9ff;
     $radius: 4px;
-    $red: red;
+    $red: #db1616;
     $grey: grey;
     .guoguo-button {
         box-sizing: border-box;

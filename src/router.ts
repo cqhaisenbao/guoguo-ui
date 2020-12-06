@@ -6,6 +6,7 @@ import ButtonDemo from './components/ButtonDemo.vue';
 import DialogDemo from './components/DialogDemo.vue';
 import TabsDemo from './components/TabsDemo.vue';
 import LoaderDemo from "./components/LoaderDemo.vue";
+import MessageDemo from "./components/MessageDemo.vue";
 import Intro from './views/Intro.vue';
 import GetStarted from './views/GetStarted.vue';
 import Install from './views/Install.vue';
@@ -28,6 +29,7 @@ export const router = createRouter({
                 {path: 'dialog', component: DialogDemo},
                 {path: 'tabs', component: TabsDemo},
                 {path: 'loader', component: LoaderDemo},
+                {path: 'message', component: MessageDemo},
             ],
         },
     ],
