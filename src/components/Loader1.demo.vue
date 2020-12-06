@@ -18,7 +18,7 @@ export default {
         const isLoading = ref(false);
         const openLoader = () => {
             isLoading.value = true;
-            setTimeout(() => isLoading.value = false, 3000);
+            setTimeout(() => isLoading.value = false, 2000);
         };
         return {isLoading, openLoader};
     }
