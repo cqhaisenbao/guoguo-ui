@@ -71,7 +71,6 @@
             display: flex;
             white-space: nowrap;
             flex-wrap: nowrap;
-            //color: white;
 
             > li {
                 margin: 0 2em;

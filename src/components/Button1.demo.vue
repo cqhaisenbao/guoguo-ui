@@ -1,5 +1,5 @@
 <demo>
-    常规使用
+常规使用
 </demo>
 <template>
     <div>
@@ -11,11 +11,9 @@
 
 <script lang="ts">
 
-    import Button from '../lib/Button.vue';
+import Button from '../lib/Button.vue';
 
-    export default {
-        components: {
-            Button
-        }
-    };
+export default {
+    components: {Button}
+};
 </script>
