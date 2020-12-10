@@ -75,10 +75,6 @@ export default defineComponent({
     padding: 1rem;
     border-radius: 0.25rem;
 
-    button {
-        align-self: center;
-    }
-
     &.success {
         color: rgba(0, 0, 0, .85);
         background: #f6ffed;

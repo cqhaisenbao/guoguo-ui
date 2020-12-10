@@ -18,10 +18,3 @@ export default {
 };
 </script>
 
-<style>
-.demo-component{
-    display: flex;
-    justify-content: flex-start;
-}
-</style>
-

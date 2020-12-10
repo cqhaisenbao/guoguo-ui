@@ -1,5 +1,5 @@
 <template>
-    <div class="signup-page mx-auto p-3 w-400">
+    <div class="signup-page mx-auto w-400">
         <validate-form @form-submit="onFormSubmit">
             <div class="mb-3">
                 <label class="form-label">邮箱地址</label>
@@ -19,7 +19,7 @@
                                 v-model="formData.repeatPassword"/>
             </div>
             <template #submit>
-                <button type="submit" class="btn btn-primary btn-block btn-large">注册新用户</button>
+                <Button level="main" type="submit">登录</Button>
             </template>
         </validate-form>
     </div>
@@ -29,6 +29,7 @@
 import {defineComponent, reactive} from 'vue';
 import ValidateForm from "./ValidateForm.vue";
 import ValidateInput from "./ValidateInput.vue";
+import Button from "../../lib/Button.vue";
 
 export default defineComponent({
     props: {
@@ -37,7 +38,7 @@ export default defineComponent({
             required: true
         }
     },
-    components: {ValidateInput, ValidateForm},
+    components: {ValidateInput, ValidateForm,Button},
     setup() {
         const formData = reactive({
             email: '',
@@ -71,6 +72,6 @@ export default defineComponent({
 <style>
 .w-400 {
     max-width: 400px;
-    margin-left: 10px !important;
+    margin-left: 1px !important;
 }
 </style>

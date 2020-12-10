@@ -9,7 +9,3 @@
         name:'guoguoTab'
     };
 </script>
-
-<style lang="scss" scoped>
-
-</style>

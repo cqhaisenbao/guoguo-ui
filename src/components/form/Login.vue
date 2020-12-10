@@ -1,5 +1,5 @@
 <template>
-    <div class="login-page mx-auto p-3 w-400">
+    <div class="login-page mx-auto w-400">
         <validate-form @form-submit="onFormSubmit">
             <div class="mb-3">
                 <label class="form-label">邮箱地址</label>
@@ -10,7 +10,7 @@
                 <validate-input :rules="rules.passwordRules" v-model="passwordVal" placeholder="请输入密码" type="password"/>
             </div>
             <template #submit>
-                <button type="submit" class="btn btn-primary btn-block btn-large">登录</button>
+                <Button  level="main" type="submit">登录</Button>
             </template>
         </validate-form>
     </div>
@@ -21,9 +21,10 @@ import {defineComponent, ref} from 'vue';
 import {emailRules, passwordRules} from './rules';
 import ValidateForm from "./ValidateForm.vue";
 import ValidateInput from "./ValidateInput.vue";
+import Button from "../../lib/Button.vue";
 
 export default defineComponent({
-    components: {ValidateInput, ValidateForm},
+    components: {Button, ValidateInput, ValidateForm},
     props: {
         rules: {
             type: Object,

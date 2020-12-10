@@ -1,5 +1,5 @@
 <template>
-    <div class="validate-input-container pb-3">
+    <div class="validate-input-container pb-2">
         <input v-if="tag !== 'textarea'" class="form-control" :class="{'is-invalid':inputRef.error}"
                v-model="inputRef.val" @blur="validateInput" :="$attrs">
         <textarea v-else class="form-control" :class="{'is-invalid':inputRef.error}"
@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, reactive, PropType, onMounted, watch} from 'vue';
+import {defineComponent, reactive, PropType, watch} from 'vue';
 import {emailReg} from './rules';
 
 export default defineComponent({
@@ -23,12 +23,8 @@ export default defineComponent({
         }
     },
     inheritAttrs: false,
-    setup(props, context) {
+    setup(props) {
         const inputRef = reactive({
-            // val: computed({
-            //     get: () => props.modelValue || '',
-            //     set: val => {context.emit('update:modelValue', val);}
-            // }),
             val: props.modelValue || '',
             error: false,
             message: ''
@@ -62,15 +58,8 @@ export default defineComponent({
             }
             return true;
         };
-
-        // onMounted(() => {
-        //     emitter.emit('form-item-created', validateInput);
-        // });
         return {inputRef, validateInput};
     }
 });
 </script>
 
-<style lang="scss" scoped>
-
-</style>
