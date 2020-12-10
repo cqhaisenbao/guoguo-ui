@@ -2,7 +2,7 @@ import {createWebHashHistory, createRouter} from 'vue-router';
 import Home from './views/Home.vue';
 import Doc from './views/Doc.vue';
 import SwitchDemo from './components/SwitchDemo.vue';
-import ButtonDemo from './components/ButtonDemo.vue';
+import ButtonDemo from './components/buttons/ButtonDemo.vue';
 import DialogDemo from './components/DialogDemo.vue';
 import TabsDemo from './components/TabsDemo.vue';
 import LoaderDemo from "./components/LoaderDemo.vue";
@@ -10,6 +10,7 @@ import MessageDemo from "./components/MessageDemo.vue";
 import Intro from './views/Intro.vue';
 import GetStarted from './views/GetStarted.vue';
 import Install from './views/Install.vue';
+import FormDemo from "./components/FormDemo.vue";
 
 const history = createWebHashHistory();
 export const router = createRouter({
@@ -30,6 +31,7 @@ export const router = createRouter({
                 {path: 'tabs', component: TabsDemo},
                 {path: 'loader', component: LoaderDemo},
                 {path: 'message', component: MessageDemo},
+                {path: 'form', component: FormDemo},
             ],
         },
     ],

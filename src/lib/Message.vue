@@ -23,7 +23,6 @@
 <script lang="ts">
 import {defineComponent, PropType, ref} from 'vue';
 
-export type MessageType = 'success' | 'error' | 'warning'
 export default defineComponent({
     props: {
         message: String,

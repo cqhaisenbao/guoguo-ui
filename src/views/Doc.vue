@@ -35,6 +35,9 @@
                     <li>
                         <router-link to="/doc/message">Message 组件</router-link>
                     </li>
+                    <li>
+                        <router-link to="/doc/form">Form 组件</router-link>
+                    </li>
                 </ol>
             </aside>
             <main>
@@ -124,7 +127,7 @@ aside {
             }
 
             .router-link-active {
-                border-left: 4px solid #0d7377;
+                border-left: 4px solid #3f51b5;
                 background: #323232;
                 color: white;
                 font-weight: 500;

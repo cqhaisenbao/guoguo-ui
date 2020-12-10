@@ -60,8 +60,12 @@ $color: #000000de;
     color: white;
 
     a:hover {
-        color: white;
+        color: #c8c7c7;
     }
+}
+
+.topnavAndBanner ::v-deep(.topnav) {
+    background: linear-gradient(270deg, #8146b4, #6990f6)
 }
 
 .features {

@@ -19,5 +19,8 @@
     //样式穿透
     .wrapper ::v-deep(.markdown-body) {
         line-height: 165%;
+        ul{
+            list-style: circle!important;
+        }
     }
 </style>

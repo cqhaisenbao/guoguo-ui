@@ -8,7 +8,7 @@
             </router-link>
             <ul class="menu">
                 <router-link to="/doc/intro">文档</router-link>
-                <li>github</li>
+                <li><a href="https://github.com/cqhaisenbao/guoguo-ui">github</a></li>
             </ul>
             <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
                 <use xlink:href="#icon-menu"></use>
@@ -18,85 +18,85 @@
 </template>
 
 <script lang="ts">
-    import {inject, Ref} from 'vue';
+import {inject, Ref} from 'vue';
 
-    export default {
-        props:{
-            toggleMenuButtonVisible:{
-                type:Boolean,
-                default:false
-            }
-        },
-        setup() {
-            const menuVisible = inject<Ref<boolean>>('menuVisible');
-            const toggleMenu = () => {
-                menuVisible.value = !menuVisible.value;
-            };
-            return {toggleMenu};
+export default {
+    props: {
+        toggleMenuButtonVisible: {
+            type: Boolean,
+            default: false
         }
-    };
+    },
+    setup() {
+        const menuVisible = inject<Ref<boolean>>('menuVisible');
+        const toggleMenu = () => {
+            menuVisible.value = !menuVisible.value;
+        };
+        return {toggleMenu};
+    }
+};
 </script>
 
 <style lang="scss" scoped>
-    $color: #007974;
-    .home .topnav {
-        background: 0 0;
+$color: #007974;
+.home .topnav {
+    background: 0 0;
+}
+
+.topnav {
+    background: white;
+    //color: #fff;
+    display: flex;
+    padding: 8px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .25);
+
+    > .logo {
+        max-width: 6em;
+        margin-right: auto;
+
+        > svg {
+            width: 40px;
+            height: 40px;
+        }
     }
 
-    .topnav {
-        background: white;
-        //color: #fff;
+    > .menu {
         display: flex;
-        padding: 8px 50px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 20;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 1px rgba(0, 0, 0, .25);
+        white-space: nowrap;
+        flex-wrap: nowrap;
 
-        > .logo {
-            max-width: 6em;
-            margin-right: auto;
-
-            > svg {
-                width: 40px;
-                height: 40px;
-            }
+        > li {
+            margin: 0 2em;
         }
+    }
 
+    > .toggleAside {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+    }
+
+    @media (max-width: 500px) {
         > .menu {
-            display: flex;
-            white-space: nowrap;
-            flex-wrap: nowrap;
-
-            > li {
-                margin: 0 2em;
-            }
-        }
-
-        > .toggleAside {
-            width: 32px;
-            height: 32px;
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
             display: none;
         }
-
-        @media (max-width: 500px) {
-            > .menu {
-                display: none;
-            }
-            > .logo {
-                margin: 0 auto;
-            }
-            > .toggleAside {
-                display: inline-block;
-            }
+        > .logo {
+            margin: 0 auto;
+        }
+        > .toggleAside {
+            display: inline-block;
         }
     }
+}
 </style>
