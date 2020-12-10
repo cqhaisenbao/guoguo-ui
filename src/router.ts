@@ -10,7 +10,7 @@ import MessageDemo from "./components/MessageDemo.vue";
 import Intro from './views/Intro.vue';
 import GetStarted from './views/GetStarted.vue';
 import Install from './views/Install.vue';
-import FormDemo from "./components/FormDemo.vue";
+import FormDemo from "./components/form/FormDemo.vue";
 
 const history = createWebHashHistory();
 export const router = createRouter({

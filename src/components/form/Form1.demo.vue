@@ -7,8 +7,8 @@
 </template>
 
 <script lang="ts">
-import Login from "./form/Login.vue";
-import {emailRules, passwordRules} from './form/rules';
+import Login from "./Login.vue";
+import {emailRules, passwordRules} from './rules';
 
 export default {
     components: {Login},

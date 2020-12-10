@@ -3,14 +3,16 @@
 </demo>
 
 <template>
+    <div class="msgWrapper">
     <Button class="mr-1" @click="success">成功提示</Button>
     <Button class="mr-1" @click="danger">警告提示</Button>
     <Button level="danger" @click="error">错误提示</Button>
+    </div>
 </template>
 
 <script lang="ts">
 import Button from "../lib/Button.vue";
-import createMessage from "../lib/createMessage";
+import createMessage from "./createMessage";
 
 export default {
     components: {Button},
@@ -29,3 +31,13 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+.msgWrapper {
+    margin-bottom: -12px;
+    button {
+        margin-bottom: 12px;
+        margin-left: 0;
+        margin-right: 8px;
+    }
+}
+</style>

@@ -26,7 +26,7 @@ export default {
     button {
         margin-bottom: 12px;
         margin-left: 0;
-        margin-right: 8px;
+        margin-right: 6px;
     }
 }
 </style>

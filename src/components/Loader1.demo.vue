@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import Loader from "../lib/Loader.vue";
+import Loader from "./Loader.vue";
 import {ref} from 'vue';
 import Button from "../lib/Button.vue";
 

@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import Demo from './Demo.vue';
+import Demo from '../Demo.vue';
 import Form1 from './Form1.demo.vue';
 import Form2 from './Form2.demo.vue'
 
