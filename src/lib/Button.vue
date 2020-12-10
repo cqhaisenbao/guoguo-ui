@@ -44,7 +44,6 @@ export default {
 @import "src/assets/style/index";
 
 $h: 38px;
-$blue: #40a9ff;
 $radius: 4px;
 $red: #e84545;
 $grey: grey;
@@ -106,7 +105,7 @@ $warning-color: #fdb827;
             &:hover,
             &:focus {
                 background: darken($main-color, 15%);
-                border-color: darken($blue, 10%);
+                border-color: darken($main-color, 10%);
             }
         }
 

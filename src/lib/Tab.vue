@@ -5,7 +5,9 @@
 </template>
 
 <script lang="ts">
-    export default {};
+    export default {
+        name:'guoguoTab'
+    };
 </script>
 
 <style lang="scss" scoped>

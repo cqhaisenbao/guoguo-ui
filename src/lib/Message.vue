@@ -63,10 +63,10 @@ export default defineComponent({
 
 .container {
     margin: 1rem auto;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 50%;
-    display: flex;
     position: fixed;
     top: 0;
     right: 0;
@@ -74,6 +74,10 @@ export default defineComponent({
     z-index: 102;
     padding: 1rem;
     border-radius: 0.25rem;
+
+    button {
+        align-self: center;
+    }
 
     &.success {
         color: rgba(0, 0, 0, .85);
@@ -110,10 +114,6 @@ export default defineComponent({
             width: 16px;
             height: 16px;
         }
-    }
-
-    button {
-        align-self: flex-end;
     }
 
     span {

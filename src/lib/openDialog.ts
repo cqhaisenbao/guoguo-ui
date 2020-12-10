@@ -1,7 +1,7 @@
 import Dialog from './Dialog.vue';
 import {createApp, h} from 'vue';
 
-export const openDialog = (options) => {
+export const openDialog = (options: dialogProps) => {
     const {title, content, closeOnclickOverlay, ok, cancel} = options;
     const div = document.createElement('div');
     const close = () => {

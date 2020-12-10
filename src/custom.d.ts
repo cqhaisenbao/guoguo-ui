@@ -8,3 +8,11 @@ interface GlobalErrorProps {
 type TagType = 'input' | 'textarea'
 
 type UploadStatus = 'ready' | 'loading' | 'success' | 'error'
+
+interface dialogProps {
+    title: any
+    content: string
+    closeOnclickOverlay?: boolean
+    ok: () => void
+    cancel: () =>void
+}

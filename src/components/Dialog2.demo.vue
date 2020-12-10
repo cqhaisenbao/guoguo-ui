@@ -1,5 +1,5 @@
 <demo>
-    一键打开 Dialog
+函数式调用 Dialog
 </demo>
 <template>
     <div>
@@ -8,28 +8,26 @@
 </template>
 
 <script lang="ts">
-    import Button from '../lib/Button.vue';
-    import {ref, h} from 'vue';
-    import {openDialog} from '../lib/openDialog';
+import Button from '../lib/Button.vue';
+import {h, defineComponent} from 'vue';
+import {openDialog} from '../lib/openDialog';
 
-    export default {
-        components: {Button},
-        setup() {
-            const showDialog = () => {
-                openDialog({
-                    title: h('strong', {}, '标题'),
-                    content: '你好',
-                    ok() {
-                        console.log('ok');
-                    },
-                    cancel() {
-                        console.log('cancel');
-                    }
-                });
-            };
-            return {
-                showDialog
-            };
-        }
-    };
+export default defineComponent({
+    components: {Button},
+    setup() {
+        const showDialog = () => {
+            openDialog({
+                title: h('strong', {}, '标题'),
+                content: '你好',
+                ok() {
+                    console.log('ok');
+                },
+                cancel() {
+                    console.log('cancel');
+                }
+            });
+        };
+        return {showDialog};
+    }
+});
 </script>
