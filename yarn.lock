@@ -2691,10 +2691,10 @@ rollup-plugin-dynamic-import-variables@^1.1.0:
     globby "^11.0.0"
     magic-string "^0.25.7"
 
-rollup-plugin-esbuild@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.npm.taobao.org/rollup-plugin-esbuild/download/rollup-plugin-esbuild-2.6.0.tgz#80336399b113a179ccb2af5bdf7c03f061f37146"
-  integrity sha1-gDNjmbEToXnMsq9b33wD8GHzcUY=
+rollup-plugin-esbuild@^2.5.0:
+  version "2.6.1"
+  resolved "https://registry.npm.taobao.org/rollup-plugin-esbuild/download/rollup-plugin-esbuild-2.6.1.tgz#5785532940d49adf1bff5b38e9bd9089262d4e7a"
+  integrity sha1-V4VTKUDUmt8b/1s46b2QiSYtTno=
   dependencies:
     "@rollup/pluginutils" "^4.1.0"
     joycon "^2.2.5"
