@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <button class="guoguo-switch" @click="toggle" :class="{'guoguo-checked':value}" :disabled="disabled">
-            <span></span>
-        </button>
-    </div>
+    <button class="guoguo-switch" @click="toggle" :class="{'guoguo-checked':value}" :disabled="disabled">
+        <span></span>
+    </button>
 </template>
 
 <script lang="ts">

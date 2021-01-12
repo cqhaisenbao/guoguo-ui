@@ -1,10 +1,9 @@
 <template>
-    <div class="guoguo-tabs">
+<div class="guoguo-tabs">
         <div class="guoguo-tabs-nav" ref="container">
             <div class="guoguo-tabs-nav-item" v-for="(t,index) in titles" :key="index"
                  :ref="el => { if (t===selected) selectedItem = el }"
                  @click="select(t)" :class="{selected: t=== selected}">
-                {{ t }}
             </div>
             <div class="guoguo-tabs-nav-indicator" ref="indicator"></div>
         </div>
